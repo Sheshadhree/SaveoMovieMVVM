@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/download"
     tools:context=".ui.popular_movie.MainActivity">
 
     <LinearLayout
@@ -25,6 +26,17 @@
             android:gravity="center"
             android:text="Connection Problem!!"
             android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Now Showing"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            />
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_movie_list"
